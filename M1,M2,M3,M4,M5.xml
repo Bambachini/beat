@@ -1,0 +1,1192 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "http://www/home/"
+    "http://www/whttps/">
+<plist version="1.0">
+    <array>
+        <dict>
+            <key>_dataType</key>
+            <string>SPHardwareDataType</string>
+            <key>_detailLevel</key>
+            <string>-1</string>
+            <key>_items</key>
+            <array>
+                <dict>
+                    <key>_name</key>
+                    <string>hardware_overview</string>
+                    <key>machine_model</key>
+                    <string>Satellite C675</string>
+                    <key>number_processors</key>
+                    <integer>4</integer>
+                    <key>physical_memory</key>
+                    <string>10645118976</string>
+                    <key>platform_manufacturer</key>
+                    <string>TOSHIBA</string>
+                    <key>serial_number</key>
+                    <string>5250E200704A63AB</string>
+                </dict>
+            </array>
+            <key>_properties</key>
+            <dict />
+            <key>_timeStamp</key>
+            <date>2021-07-10T05:58:36Z</date>
+            <key>_versionInfo</key>
+            <dict>
+                <key>com.apple.SystemProfiler.SPPlatformReporter</key>
+                <string>M1,M2,M3,M4,M5</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>_dataType</key>
+            <string>SPParallelATADataType</string>
+            <key>_detailLevel</key>
+            <string>-1</string>
+            <key>_items</key>
+            <array>
+                <dict>
+                    <key>_items</key>
+                    <array>
+                        <dict>
+                            <key>Target</key>
+                            <integer>0</integer>
+                            <key>_name</key>
+                            <string>TSSTcorp CDDVDW SN-208AB</string>
+                            <key>device_model</key>
+                            <string>TSSTcorp CDDVDW SN-208AB</string>
+                            <key>device_revision</key>
+                            <string>TO02</string>
+                            <key>mount_point</key>
+                            <string>F:</string>
+                            <key>spata_bus</key>
+                            <integer>2</integer>
+                            <key>spata_unit_number</key>
+                            <integer>0</integer>
+                        </dict>
+                        <dict>
+                            <key>Target</key>
+                            <integer>0</integer>
+                            <key>_name</key>
+                            <string>TOSHIBA MK2565GSX</string>
+                            <key>device_model</key>
+                            <string>TOSHIBA MK2565GSX</string>
+                            <key>device_revision</key>
+                            <string>GJ003A</string>
+                            <key>device_serial</key>
+                            <string>115LB1C7B</string>
+                            <key>size</key>
+                            <string>250.06 GB</string>
+                            <key>spata_bus</key>
+                            <integer>0</integer>
+                            <key>spata_unit_number</key>
+                            <integer>0</integer>
+                            <key>volumes</key>
+                            <array>
+                                <dict>
+                                    <key>_name</key>
+                                    <string>Local Disk</string>
+                                    <key>file_system</key>
+                                    <string>NTFS</string>
+                                    <key>free_space</key>
+                                    <string>201.76 GB</string>
+                                    <key>mount_point</key>
+                                    <string>C:</string>
+                                    <key>size</key>
+                                    <string>249.47 GB</string>
+                                </dict>
+                            </array>
+                        </dict>
+                    </array>
+                    <key>_name</key>
+                    <string>spata_ata_bus</string>
+                </dict>
+            </array>
+            <key>_parentDataType</key>
+            <string>SPHardwareDataType</string>
+            <key>_properties</key>
+            <dict>
+                <key>_name</key>
+                <dict>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_isOutlineColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>0</string>
+                </dict>
+                <key>device_model</key>
+                <dict>
+                    <key>_order</key>
+                    <string>42</string>
+                </dict>
+                <key>device_revision</key>
+                <dict>
+                    <key>_order</key>
+                    <string>44</string>
+                </dict>
+                <key>device_serial</key>
+                <dict>
+                    <key>_order</key>
+                    <string>46</string>
+                </dict>
+                <key>spata_bus</key>
+                <dict>
+                    <key>_order</key>
+                    <string>22</string>
+                </dict>
+                <key>spata_device-id</key>
+                <dict>
+                    <key>_order</key>
+                    <string>30</string>
+                </dict>
+                <key>spata_name</key>
+                <dict>
+                    <key>_order</key>
+                    <string>20</string>
+                </dict>
+                <key>spata_protocol</key>
+                <dict>
+                    <key>_order</key>
+                    <string>100</string>
+                </dict>
+                <key>spata_revision-id</key>
+                <dict>
+                    <key>_order</key>
+                    <string>32</string>
+                </dict>
+                <key>spata_rom-revision</key>
+                <dict>
+                    <key>_order</key>
+                    <string>26</string>
+                </dict>
+                <key>spata_slot_name</key>
+                <dict>
+                    <key>_order</key>
+                    <string>24</string>
+                </dict>
+                <key>spata_socket_type</key>
+                <dict>
+                    <key>_order</key>
+                    <string>120</string>
+                </dict>
+                <key>spata_unit_number</key>
+                <dict>
+                    <key>_order</key>
+                    <string>110</string>
+                </dict>
+                <key>spata_vendor-id</key>
+                <dict>
+                    <key>_order</key>
+                    <string>28</string>
+                </dict>
+            </dict>
+            <key>_timeStamp</key>
+            <date>2021-07-10T05:58:36Z</date>
+            <key>_versionInfo</key>
+            <dict>
+                <key>com.apple.SystemProfiler.SPParallelATAReporter</key>
+                <string>M1,M2,M3,M4,M5</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>_dataType</key>
+            <string>SPUSBDataType</string>
+            <key>_detailLevel</key>
+            <string>-1</string>
+            <key>_items</key>
+            <array>
+                <dict>
+                    <key>Description</key>
+                    <string>Intel(R) 6 Series/C200 Series Chipset Family USB Enhanced Host
+                        Controller - 1C26
+                    </string>
+                    <key>_items</key>
+                    <array>
+                        <dict>
+                            <key>Description</key>
+                            <string>Concentrador raíz USB</string>
+                            <key>_name</key>
+                            <string>Concentrador raíz USB</string>
+                        </dict>
+                        <dict>
+                            <key>Description</key>
+                            <string>Generic USB Hub</string>
+                            <key>_name</key>
+                            <string>Generic USB Hub</string>
+                            <key>product_id</key>
+                            <string>0024</string>
+                            <key>vendor_id</key>
+                            <string>8087</string>
+                        </dict>
+                    </array>
+                    <key>_name</key>
+                    <string>USB High-Speed Bus</string>
+                    <key>pci_device</key>
+                    <string>1C26</string>
+                    <key>pci_revision</key>
+                    <string>05</string>
+                    <key>pci_vendor</key>
+                    <string>8086</string>
+                </dict>
+                <dict>
+                    <key>Description</key>
+                    <string>Intel(R) 6 Series/C200 Series Chipset Family USB Enhanced Host
+                        Controller - 1C2D
+                    </string>
+                    <key>_items</key>
+                    <array>
+                        <dict>
+                            <key>Description</key>
+                            <string>Concentrador raíz USB</string>
+                            <key>_name</key>
+                            <string>Concentrador raíz USB</string>
+                        </dict>
+                        <dict>
+                            <key>Description</key>
+                            <string>Generic USB Hub</string>
+                            <key>_name</key>
+                            <string>Generic USB Hub</string>
+                            <key>product_id</key>
+                            <string>0024</string>
+                            <key>vendor_id</key>
+                            <string>8087</string>
+                        </dict>
+                        <dict>
+                            <key>Description</key>
+                            <string>Dispositivo compuesto USB</string>
+                            <key>_name</key>
+                            <string>Dispositivo compuesto USB</string>
+                            <key>product_id</key>
+                            <string>B1D6</string>
+                            <key>vendor_id</key>
+                            <string>04F2</string>
+                        </dict>
+                        <dict>
+                            <key>Description</key>
+                            <string>Dispositivo de vídeo USB</string>
+                            <key>_name</key>
+                            <string>Chicony USB 2.0 Camera</string>
+                            <key>product_id</key>
+                            <string>B1D6</string>
+                            <key>vendor_id</key>
+                            <string>04F2</string>
+                        </dict>
+                    </array>
+                    <key>_name</key>
+                    <string>USB High-Speed Bus</string>
+                    <key>pci_device</key>
+                    <string>1C2D</string>
+                    <key>pci_revision</key>
+                    <string>05</string>
+                    <key>pci_vendor</key>
+                    <string>8086</string>
+                </dict>
+            </array>
+            <key>_parentDataType</key>
+            <string>SPHardwareDataType</string>
+            <key>_properties</key>
+            <dict>
+                <key>_name</key>
+                <dict>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_isOutlineColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>0</string>
+                </dict>
+                <key>bsd_name</key>
+                <dict>
+                    <key>_order</key>
+                    <string>42</string>
+                </dict>
+                <key>detachable_drive</key>
+                <dict>
+                    <key>_order</key>
+                    <string>39</string>
+                </dict>
+                <key>device_manufacturer</key>
+                <dict>
+                    <key>_order</key>
+                    <string>20</string>
+                </dict>
+                <key>device_model</key>
+                <dict>
+                    <key>_order</key>
+                    <string>22</string>
+                </dict>
+                <key>device_revision</key>
+                <dict>
+                    <key>_order</key>
+                    <string>24</string>
+                </dict>
+                <key>device_serial</key>
+                <dict>
+                    <key>_order</key>
+                    <string>26</string>
+                </dict>
+            </dict>
+            <key>_timeStamp</key>
+            <date>2021-07-10T05:58:37Z</date>
+            <key>_versionInfo</key>
+            <dict>
+                <key>com.apple.SystemProfiler.SPUSBReporter</key>
+                <string>M1,M2,M3,M4,M5</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>_dataType</key>
+            <string>SPDisplaysDataType</string>
+            <key>_detailLevel</key>
+            <string>-1</string>
+            <key>_items</key>
+            <array>
+                <dict>
+                    <key>_name</key>
+                    <string>Intel(R) HD Graphics 3000</string>
+                    <key>spdisplays_depth</key>
+                    <integer>32</integer>
+                    <key>spdisplays_device-id</key>
+                    <string>VideoController1</string>
+                    <key>spdisplays_vram</key>
+                    <integer>-2084569088</integer>
+                    <key>sppci_model</key>
+                    <string>Intel(R) HD Graphics 3000</string>
+                </dict>
+                <dict>
+                    <key>Monitor PnP genérico</key>
+                    <dict />
+                    <key>_name</key>
+                    <string>spdisplays_ndrvs</string>
+                </dict>
+            </array>
+            <key>_parentDataType</key>
+            <string>SPHardwareDataType</string>
+            <key>_properties</key>
+            <dict>
+                <key>_name</key>
+                <dict>
+                    <key>_order</key>
+                    <string>0</string>
+                </dict>
+                <key>spdisplays_depth</key>
+                <dict>
+                    <key>_order</key>
+                    <string>150</string>
+                </dict>
+                <key>spdisplays_device-id</key>
+                <dict>
+                    <key>_order</key>
+                    <string>165</string>
+                </dict>
+                <key>spdisplays_resolution</key>
+                <dict>
+                    <key>_order</key>
+                    <string>145</string>
+                </dict>
+                <key>spdisplays_vram</key>
+                <dict>
+                    <key>_order</key>
+                    <string>135</string>
+                </dict>
+                <key>sppci_device-id</key>
+                <dict>
+                    <key>_order</key>
+                    <string>50</string>
+                </dict>
+                <key>sppci_model</key>
+                <dict>
+                    <key>_order</key>
+                    <string>1</string>
+                </dict>
+                <key>sppci_name</key>
+                <dict>
+                    <key>_order</key>
+                    <string>10</string>
+                </dict>
+            </dict>
+            <key>_timeStamp</key>
+            <date>2021-07-10T05:58:37Z</date>
+            <key>_versionInfo</key>
+            <dict>
+                <key>com.apple.SystemProfiler.SPDisplaysReporter</key>
+                <string>M1,M2,M3,M3,M4,M5</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>_dataType</key>
+            <string>SPMemoryDataType</string>
+            <key>_detailLevel</key>
+            <string>-1</string>
+            <key>_items</key>
+            <array>
+                <dict>
+                    <key>_name</key>
+                    <string>BANK 0 / DIMM0</string>
+                    <key>dimm_size</key>
+                    <string>8589934592</string>
+                    <key>dimm_speed</key>
+                    <string>1333 MHz</string>
+                </dict>
+                <dict>
+                    <key>_name</key>
+                    <string>BANK 2 / DIMM2</string>
+                    <key>dimm_size</key>
+                    <string>2147483648</string>
+                    <key>dimm_speed</key>
+                    <string>1333 MHz</string>
+                </dict>
+            </array>
+            <key>_parentDataType</key>
+            <string>SPHardwareDataType</string>
+            <key>_properties</key>
+            <dict>
+                <key>_name</key>
+                <dict>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>10</string>
+                </dict>
+                <key>dimm_size</key>
+                <dict>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>20</string>
+                </dict>
+                <key>dimm_speed</key>
+                <dict>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>40</string>
+                </dict>
+                <key>dimm_status</key>
+                <dict>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>50</string>
+                </dict>
+                <key>dimm_type</key>
+                <dict>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>30</string>
+                </dict>
+            </dict>
+            <key>_timeStamp</key>
+            <date>2021-07-10T05:58:37Z</date>
+            <key>_versionInfo</key>
+            <dict>
+                <key>com.apple.SystemProfiler.SPMemoryReporter</key>
+                <string>M1,M2,M3,M4,M5</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>_dataType</key>
+            <string>SPNetworkDataType</string>
+            <key>_detailLevel</key>
+            <string>-1</string>
+            <key>_items</key>
+            <array>
+                <dict>
+                    <key>IPv4</key>
+                    <dict>
+                        <key>Addresses</key>
+                        <array>
+                            <string>M1,M2,M3,M4,M5</string>
+                        </array>
+                        <key>ConfigMethod</key>
+                        <string>DHCP</string>
+                        <key>Default Gateway</key>
+                        <string>M1,M2,M3,M4</string>
+                        <key>SubnetMasks</key>
+                        <array>
+                            <string>M1,M2,M3,M4</string>
+                        </array>
+                    </dict>
+                    <key>_name</key>
+                    <string>Realtek PCIe FE Family Controller</string>
+                    <key>dhcp</key>
+                    <dict>
+                        <key>Lease Expires</key>
+                        <string>Wed Dec 31 17:00:00 1969</string>
+                        <key>Lease Obtained</key>
+                        <string>Wed Dec 31 17:00:00 1969</string>
+                        <key>dhcp_lease_duration</key>
+                        <string>1625896717.00</string>
+                        <key>dhcp_routers</key>
+                        <array>
+                            <string>M1,M2,M3,M4,M5</string>
+                        </array>
+                    </dict>
+                    <key>type</key>
+                    <string>Ethernet</string>
+                </dict>
+                <dict>
+                    <key>DNS</key>
+                    <dict>
+                        <key>ServerAddresses</key>
+                        <array>
+                            <string>192.168.43.1</string>
+                        </array>
+                    </dict>
+                    <key>IPv4</key>
+                    <dict>
+                        <key>Addresses</key>
+                        <array>
+                            <string>192.168.43.118</string>
+                        </array>
+                        <key>ConfigMethod</key>
+                        <string>DHCP</string>
+                        <key>Default Gateway</key>
+                        <string>192.168.43.1</string>
+                        <key>SubnetMasks</key>
+                        <array>
+                            <string>255.255.255.0</string>
+                        </array>
+                    </dict>
+                    <key>_name</key>
+                    <string>Realtek RTL8188CE Wireless LAN 802.11n PCI-E NIC</string>
+                    <key>dhcp</key>
+                    <dict>
+                        <key>Lease Expires</key>
+                        <string>Wed Dec 31 17:00:00 1969</string>
+                        <key>Lease Obtained</key>
+                        <string>Fri Jul 9 22:54:17 2021</string>
+                        <key>dhcp_lease_duration</key>
+                        <string>260.00</string>
+                        <key>dhcp_routers</key>
+                        <array>
+                            <string>192.168.43.1</string>
+                        </array>
+                    </dict>
+                    <key>type</key>
+                    <string>Unknown</string>
+                </dict>
+                <dict>
+                    <key>IPv4</key>
+                    <dict>
+                        <key>Addresses</key>
+                        <array>
+                            <string>M1,M2,M3,M4,M5</string>
+                        </array>
+                        <key>ConfigMethod</key>
+                        <string>DHCP</string>
+                        <key>Default Gateway</key>
+                        <string>M1,M2,M3,M4,M5</string>
+                        <key>SubnetMasks</key>
+                        <array>
+                            <string>M1,M2,M3,M4,M5</string>
+                        </array>
+                    </dict>
+                    <key>_name</key>
+                    <string>Microsoft Wi-Fi Direct Virtual Adapter</string>
+                    <key>dhcp</key>
+                    <dict>
+                        <key>Lease Expires</key>
+                        <string>Wed Dec 31 17:00:00 1969</string>
+                        <key>Lease Obtained</key>
+                        <string>Wed Dec 31 17:00:00 1969</string>
+                        <key>dhcp_lease_duration</key>
+                        <string>1625896717.00</string>
+                        <key>dhcp_routers</key>
+                        <array>
+                            <string>M1,M2,M3,M4,M5</string>
+                        </array>
+                    </dict>
+                    <key>type</key>
+                    <string>Unknown</string>
+                </dict>
+                <dict>
+                    <key>IPv4</key>
+                    <dict>
+                        <key>Addresses</key>
+                        <array>
+                            <string>M1,M2,M3,M4,M5</string>
+                        </array>
+                        <key>ConfigMethod</key>
+                        <string>DHCP</string>
+                        <key>Default Gateway</key>
+                        <string>M1,M2,M3,M4</string>
+                        <key>SubnetMasks</key>
+                        <array>
+                            <string>M1,M2,M3,M4,M5</string>
+                        </array>
+                    </dict>
+                    <key>_name</key>
+                    <string>Microsoft Wi-Fi Direct Virtual Adapter #2</string>
+                    <key>dhcp</key>
+                    <dict>
+                        <key>Lease Expires</key>
+                        <string>Wed Dec 31 17:00:00 1969</string>
+                        <key>Lease Obtained</key>
+                        <string>Wed Dec 31 17:00:00 1969</string>
+                        <key>dhcp_lease_duration</key>
+                        <string>1625896717.00</string>
+                        <key>dhcp_routers</key>
+                        <array>
+                            <string>M1,M2,M3,M4</string>
+                        </array>
+                    </dict>
+                    <key>type</key>
+                    <string>Unknown</string>
+                </dict>
+            </array>
+            <key>_properties</key>
+            <dict>
+                <key>_name</key>
+                <dict>
+                    <key>_detailLevel</key>
+                    <string>-1</string>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>0</string>
+                </dict>
+                <key>ip_address</key>
+                <dict>
+                    <key>_detailLevel</key>
+                    <string>0</string>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>30</string>
+                </dict>
+                <key>type</key>
+                <dict>
+                    <key>_detailLevel</key>
+                    <string>-1</string>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>10</string>
+                </dict>
+            </dict>
+            <key>_timeStamp</key>
+            <date>2021-07-10T05:58:37Z</date>
+            <key>_versionInfo</key>
+            <dict>
+                <key>com.apple.SystemProfiler.SPNetworkReporter</key>
+                <string>M1,M2,M3,M4,M5</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>_dataType</key>
+            <string>SPSoftwareDataType</string>
+            <key>_detailLevel</key>
+            <string>-1</string>
+            <key>_items</key>
+            <array>
+                <dict>
+                    <key>_name</key>
+                    <string>os_overview</string>
+                    <key>local_host_name</key>
+                    <string>DESKTOP-IV130MF</string>
+                    <key>os_version</key>
+                    <string>Microsoft Windows 10 x64 Professional Edition (Build 19042)</string>
+                </dict>
+            </array>
+            <key>_properties</key>
+            <dict>
+                <key>local_host_name</key>
+                <dict>
+                    <key>_detailLevel</key>
+                    <string>0</string>
+                    <key>_order</key>
+                    <string>35</string>
+                </dict>
+                <key>os_version</key>
+                <dict>
+                    <key>_order</key>
+                    <string>10</string>
+                </dict>
+            </dict>
+            <key>_timeStamp</key>
+            <date>2021-07-10T05:59:14Z</date>
+            <key>_versionInfo</key>
+            <dict>
+                <key>com.apple.SystemProfiler.SPOSReporter</key>
+                <string>M1,M2,M3,M4,M5</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>_dataType</key>
+            <string>SPLogsDataType</string>
+            <key>_detailLevel</key>
+            <string>0</string>
+            <key>_items</key>
+            <array />
+            <key>_parentDataType</key>
+            <string>SPSoftwareDataType</string>
+            <key>_properties</key>
+            <dict>
+                <key>_name</key>
+                <dict>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>1</string>
+                </dict>
+                <key>description</key>
+                <dict>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>0</string>
+                </dict>
+                <key>lastModified</key>
+                <dict>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>3</string>
+                </dict>
+                <key>path</key>
+                <dict>
+                    <key>_order</key>
+                    <string>4</string>
+                </dict>
+                <key>size</key>
+                <dict>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>2</string>
+                </dict>
+            </dict>
+            <key>_timeStamp</key>
+            <date>2021-07-10T05:59:14Z</date>
+            <key>_versionInfo</key>
+            <dict>
+                <key>com.apple.SystemProfiler.SPLogsReporter</key>
+                <string>M1,M2,M3,M4,M5</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>_dataType</key>
+            <string>Hosts</string>
+            <key>_detailLevel</key>
+            <string>0</string>
+            <key>_items</key>
+            <array>
+                <dict>
+                    <key>Contents</key>
+                    <string># Copyright (c) 1993-2009 Microsoft Corp.
+                        #
+                        # This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+                        #
+                        # This file contains the mappings of IP addresses to host names. Each
+                        # entry should be kept on an individual line. The IP address should
+                        # be placed in the first column followed by the corresponding host name.
+                        # The IP address and the host name should be separated by at least one
+                        # space.
+                        #
+                        # Additionally, comments (such as these) may be inserted on individual
+                        # lines or following the machine name denoted by a '#' symbol.
+                        #
+                        # For example:
+                        #
+                        # 102.54.94.97 rhino.acme.com # source server
+                        # 38.25.63.10 x.acme.com # x client host
+
+                        # localhost name resolution is handled within DNS itself.
+                        # 127.0.0.1 localhost
+                        # ::1 localhost
+                    </string>
+                    <key>Last Modified</key>
+                    <date>2019-12-07T09:12:44Z</date>
+                    <key>Path</key>
+                    <string>C:\Windows\system32\drivers\etc\hosts</string>
+                    <key>Size</key>
+                    <integer>824</integer>
+                    <key>_name</key>
+                    <string>Hosts File</string>
+                </dict>
+            </array>
+            <key>_parentDataType</key>
+            <string>SPSoftwareDataType</string>
+            <key>_properties</key>
+            <dict>
+                <key>Last Modified</key>
+                <dict>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>2</string>
+                </dict>
+                <key>Path</key>
+                <dict>
+                    <key>_order</key>
+                    <string>3</string>
+                </dict>
+                <key>Size</key>
+                <dict>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>1</string>
+                </dict>
+                <key>_name</key>
+                <dict>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>0</string>
+                </dict>
+            </dict>
+            <key>_timeStamp</key>
+            <date>2021-07-10T05:59:14Z</date>
+            <key>_versionInfo</key>
+            <dict>
+                <key>com.apple.SystemProfiler.SPHosts FileReporter</key>
+                <string>M1,M2,M3,M4,M5</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>_dataType</key>
+            <string>iTunes</string>
+            <key>_detailLevel</key>
+            <string>-1</string>
+            <key>_items</key>
+            <array>
+                <dict>
+                    <key>Apple Mobile Device Driver Status</key>
+                    <string>Not found.</string>
+                    <key>Bonjour</key>
+                    <string>3.0.0.2 (765.20)</string>
+                    <key>Core Media</key>
+                    <string>Yes</string>
+                    <key>Display Scaling Factor</key>
+                    <string>100.00</string>
+                    <key>Gracenote DSP</key>
+                    <string>3.06.1.3084</string>
+                    <key>Gracenote MusicID</key>
+                    <string>3.06.1.3084</string>
+                    <key>Gracenote SDK</key>
+                    <string>3.06.1.3084</string>
+                    <key>Gracenote Submit</key>
+                    <string>3.06.1.3084</string>
+                    <key>Running Elevated</key>
+                    <string>No</string>
+                    <key>Running as Admin</key>
+                    <string>No</string>
+                    <key>Safe Mode</key>
+                    <string>No</string>
+                    <key>WebKit Accelerated Compositing</key>
+                    <string>No</string>
+                    <key>_name</key>
+                    <string>Overview</string>
+                    <key>iTunes Version</key>
+                    <string>12.11.3.17</string>
+                </dict>
+            </array>
+            <key>_properties</key>
+            <dict />
+            <key>_timeStamp</key>
+            <date>2021-07-10T05:59:14Z</date>
+            <key>_versionInfo</key>
+            <dict>
+                <key>com.apple.SystemProfiler.SPiTunesReporter</key>
+                <string>M1,M2,M3,M4,M5</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>_dataType</key>
+            <string>Optical</string>
+            <key>_detailLevel</key>
+            <string>0</string>
+            <key>_items</key>
+            <array>
+                <dict>
+                    <key>Burn Error</key>
+                    <string>No burn errors reported.</string>
+                    <key>CD Text on Burn</key>
+                    <string>No</string>
+                    <key>Error Correction on Import</key>
+                    <string>No</string>
+                    <key>Force Optical Power Calibration</key>
+                    <string>No</string>
+                    <key>_name</key>
+                    <string>Importing and Burning Settings Overview</string>
+                </dict>
+            </array>
+            <key>_parentDataType</key>
+            <string>iTunes</string>
+            <key>_properties</key>
+            <dict />
+            <key>_timeStamp</key>
+            <date>2021-07-10T05:59:16Z</date>
+            <key>_versionInfo</key>
+            <dict>
+                <key>com.apple.SystemProfiler.SPOpticalReporter</key>
+                <string>M1,M2,M3,M4,M5</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>_dataType</key>
+            <string>Network</string>
+            <key>_detailLevel</key>
+            <string>0</string>
+            <key>_items</key>
+            <array>
+                <dict>
+                    <key>Connection to Apple web site</key>
+                    <string>Success</string>
+                    <key>Connection to Gracenote server</key>
+                    <string>Success</string>
+                    <key>Connection to browsing iTunes store</key>
+                    <string>Success</string>
+                    <key>Connection to firmware update server</key>
+                    <string>Success</string>
+                    <key>Connection to iPhone activation server</key>
+                    <string>Success</string>
+                    <key>Connection to purchasing from iTunes store</key>
+                    <string>Success</string>
+                    <key>Last Successful Store Access</key>
+                    <string>2021-07-09 22:57:56</string>
+                    <key>_name</key>
+                    <string>Store Access Overview</string>
+                </dict>
+            </array>
+            <key>_parentDataType</key>
+            <string>iTunes</string>
+            <key>_properties</key>
+            <dict />
+            <key>_timeStamp</key>
+            <date>2021-07-10T05:59:16Z</date>
+            <key>_versionInfo</key>
+            <dict>
+                <key>com.apple.SystemProfiler.SPNetworkReporter</key>
+                <string>M1,M2,M3,M4,M5</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>_dataType</key>
+            <string>HDCP</string>
+            <key>_detailLevel</key>
+            <string>0</string>
+            <key>_items</key>
+            <array>
+                <dict>
+                    <key>HDCP Supported</key>
+                    <string>Yes</string>
+                    <key>_name</key>
+                    <string>Overview</string>
+                </dict>
+                <dict>
+                    <key>_items</key>
+                    <array>
+                        <dict>
+                            <key>Name</key>
+                            <string>\\.\DISPLAY1</string>
+                            <key>Primary Monitor</key>
+                            <string>Yes</string>
+                            <key>Rectangle</key>
+                            <string>0 0 900 1600</string>
+                            <key>Video Outputs</key>
+                            <array>
+                                <dict>
+                                    <key>Connector Type</key>
+                                    <string>OPM_COPP_COMPATIBLE_CONNECTOR_TYPE_INTERNAL
+                                        OPM_CONNECTOR_TYPE_LVDS
+                                    </string>
+                                    <key>HDCP Enabled</key>
+                                    <string>No</string>
+                                    <key>Internal Output</key>
+                                    <string>Yes</string>
+                                    <key>Last HDCP Error</key>
+                                    <string>S_OK</string>
+                                    <key>Supported Protection Types</key>
+                                    <string>OPM_PROTECTION_TYPE_NONE</string>
+                                    <key>Supports HDCP</key>
+                                    <string>No</string>
+                                    <key>Use DPCP</key>
+                                    <string>No</string>
+                                    <key>_name</key>
+                                    <string>Video Output 1</string>
+                                </dict>
+                            </array>
+                            <key>_name</key>
+                            <string>Monitor 1</string>
+                        </dict>
+                    </array>
+                    <key>_name</key>
+                    <string>Monitors</string>
+                </dict>
+            </array>
+            <key>_parentDataType</key>
+            <string>iTunes</string>
+            <key>_properties</key>
+            <dict />
+            <key>_timeStamp</key>
+            <date>2021-07-10T05:59:16Z</date>
+            <key>_versionInfo</key>
+            <dict>
+                <key>com.apple.SystemProfiler.SPHDCPReporter</key>
+                <string>M1,M2,M3,M4,M5</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>_dataType</key>
+            <string>iPod</string>
+            <key>_detailLevel</key>
+            <string>0</string>
+            <key>_items</key>
+            <array />
+            <key>_parentDataType</key>
+            <string>iTunes</string>
+            <key>_properties</key>
+            <dict>
+                <key>Last Connected</key>
+                <dict>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_isOutlineColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>1</string>
+                </dict>
+                <key>Model Name</key>
+                <dict>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_isOutlineColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>0</string>
+                </dict>
+            </dict>
+            <key>_timeStamp</key>
+            <date>2021-07-10T05:59:16Z</date>
+            <key>_versionInfo</key>
+            <dict>
+                <key>com.apple.SystemProfiler.SPiPodReporter</key>
+                <string>M1,M2,M3,M4,M5</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>_dataType</key>
+            <string>iPhone</string>
+            <key>_detailLevel</key>
+            <string>0</string>
+            <key>_items</key>
+            <array />
+            <key>_parentDataType</key>
+            <string>iTunes</string>
+            <key>_properties</key>
+            <dict>
+                <key>Last Connected</key>
+                <dict>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_isOutlineColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>1</string>
+                </dict>
+                <key>Model Name</key>
+                <dict>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_isOutlineColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>0</string>
+                </dict>
+            </dict>
+            <key>_timeStamp</key>
+            <date>2021-07-10T05:59:16Z</date>
+            <key>_versionInfo</key>
+            <dict>
+                <key>com.apple.SystemProfiler.SPiPhoneReporter</key>
+                <string>M1,M2,M3,M4,M5</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>_dataType</key>
+            <string>iPhone 16 pro max</string>
+            <key>_detailLevel</key>
+            <string>0</string>
+            <key>_items</key>
+            <array />
+            <key>_parentDataType</key>
+            <string>iTunes</string>
+            <key>_properties</key>
+            <dict>
+                <key>Last Connected</key>
+                <dict>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_isOutlineColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>1</string>
+                </dict>
+                <key>Model Name</key>
+                <dict>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_isOutlineColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>0</string>
+                </dict>
+            </dict>
+            <key>_timeStamp</key>
+            <date>2021-07-10T05:59:16Z</date>
+            <key>_versionInfo</key>
+            <dict>
+                <key>com.apple.SystemProfiler.SPiPadReporter</key>
+                <string>M1,M2,M3,M4,M5</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>_dataType</key>
+            <string>Plug-ins</string>
+            <key>_detailLevel</key>
+            <string>0</string>
+            <key>_items</key>
+            <array />
+            <key>_parentDataType</key>
+            <string>iTunes</string>
+            <key>_properties</key>
+            <dict>
+                <key>Loaded</key>
+                <dict>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_isOutlineColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>2</string>
+                </dict>
+                <key>Name</key>
+                <dict>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_isOutlineColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>0</string>
+                </dict>
+                <key>Version</key>
+                <dict>
+                    <key>_isColumn</key>
+                    <string>YES</string>
+                    <key>_isOutlineColumn</key>
+                    <string>YES</string>
+                    <key>_order</key>
+                    <string>1</string>
+                </dict>
+            </dict>
+            <key>_timeStamp</key>
+            <date>2021-07-10T05:59:16Z</date>
+            <key>_versionInfo</key>
+            <dict>
+                <key>com.apple.SystemProfiler.SPPlug-insReporter</key>
+                <string>M1,M2,M3,M4,M5</string>
+            </dict>
+        </dict>
+    </array>
+</plist>
