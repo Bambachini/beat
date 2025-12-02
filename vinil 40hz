@@ -3,8 +3,8 @@ Data Preprocessing
 
 Denoising
 Skip the first 2 seconds of the signal.
-High-frequency noise (>40hz).
-Baseline wander (<0.5hz).
+High-frequency noise (>=40hz).
+Baseline wander (<=0.5hz).
 Inversion correction
 Downsampling
 From 300hz to 100hz.
