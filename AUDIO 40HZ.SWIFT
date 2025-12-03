@@ -1,0 +1,234 @@
+import Foundation
+import Accelerate
+
+// MARK: - Data Preprocessing Functions
+
+func denoise(signal: [Double], sampleRate: Double) -> [Double] {
+    let trimmedSignal = Array(signal.dropFirst(Int(sampleRate * 2))) // Skip first 2 seconds
+    let highPassFiltered = highPassFilter(signal: trimmedSignal, cutoff: 0.5, sampleRate: sampleRate)
+    let lowPassFiltered = lowPassFilter(signal: highPassFiltered, cutoff: 40, sampleRate: sampleRate)
+    return invertCorrection(signal: lowPassFiltered)
+}
+
+func downsample(signal: [Double], originalRate: Double, targetRate: Double) -> [Double] {
+    let factor = Int(originalRate / targetRate)
+    return stride(from: 0, to: signal.count, by: factor).map { signal[$0] }
+}
+
+// MARK: - Dataset Splitting
+
+func splitDataset(dataset: [Double], trainRatio: Double, validRatio: Double) -> ([Double], [Double], [Double]) {
+    let trainEnd = Int(Double(dataset.count) * trainRatio)
+    let validEnd = trainEnd + Int(Double(dataset.count) * validRatio)
+    return (Array(dataset[..<trainEnd]), Array(dataset[trainEnd..<validEnd]), Array(dataset[validEnd...]))
+}
+
+// MARK: - Data Augmentation
+
+func randomTimeScale(signal: [Double]) -> [Double] {
+    // Implement random time scaling
+    return signal
+}
+
+func randomNoise(signal: [Double]) -> [Double] {
+    // Add random noise
+    return signal
+}
+
+func randomInvert(signal: [Double]) -> [Double] {
+    return Bool.random() ? signal.map { -$0 } : signal
+}
+
+func randomMask(signal: [Double]) -> [Double] {
+    // Apply random mask
+    return signal
+}
+
+// MARK: - Outlier Handling
+
+func clipSignal(signal: [Double], stdMultiplier: Double = 3.0) -> [Double] {
+    let mean = signal.reduce(0, +) / Double(signal.count)
+    let std = sqrt(signal.map { pow($0 - mean, 2) }.reduce(0, +) / Double(signal.count))
+    return signal.map { min(max($0, mean - stdMultiplier * std), mean + stdMultiplier * std) }
+}
+
+// MARK: - Normalization
+
+func minMaxNormalize(signal: [Double]) -> [Double] {
+    guard let minVal = signal.min(), let maxVal = signal.max() else { return signal }
+    return signal.map { ($0 - minVal) / (maxVal - minVal) }
+}
+
+func meanNormalize(signal: [Double]) -> [Double] {
+    let mean = signal.reduce(0, +) / Double(signal.count)
+    return signal.map { $0 - mean }
+}
+
+func zScoreNormalize(signal: [Double]) -> [Double] {
+    let mean = signal.reduce(0, +) / Double(signal.count)
+    let std = sqrt(signal.map { pow($0 - mean, 2) }.reduce(0, +) / Double(signal.count))
+    return signal.map { ($0 - mean) / std }
+}
+// Additional functions for cropping, zero padding, federated partitioning, etc., would follow similar structure.
+ func denoise(signal: [Double], sampleRate: Double) -> [Double] {
+let trimmedSignal = Array(signal.dropFirst(Int(sampleRate * 2))) // Skip first 2 seconds
+let highPassFiltered = highPassFilter(signal: trimmedSignal, cutoff: 0.5, sampleRate: sampleRate)
+let lowPassFiltered = lowPassFilter(signal: highPassFiltered, cutoff: 40, sampleRate: sampleRate)
+return invertCorrection(signal: lowPassFiltered)
+}
+
+   func downsample(signal: [Double], originalRate: Double, targetRate: Double) -> [Double] {
+let factor = Int(originalRate / targetRate)
+return stride(from: 0, to: signal.count, by: factor).map { signal[$0] }
+}
+
+func splitDataset(dataset: [Double], trainRatio: Double, validRatio: Double) -> ([Double], [Double], [Double]) {
+let trainEnd = Int(Double(dataset.count) * trainRatio)
+let validEnd = trainEnd + Int(Double(dataset.count) * validRatio)
+return (Array(dataset[..<trainEnd]), Array(dataset[trainEnd..<validEnd]), Array(dataset[validEnd...]))
+}
+
+// MARK: - Data Preprocessing Functions
+
+func denoise(signal: [Double], sampleRate: Double) -> [Double] {
+let trimmedSignal = Array(signal.dropFirst(Int(sampleRate * 2))) // Skip first 2 seconds
+let highPassFiltered = highPassFilter(signal: trimmedSignal, cutoff: 0.5, sampleRate: sampleRate)
+let lowPassFiltered = lowPassFilter(signal: highPassFiltered, cutoff: 40, sampleRate: sampleRate)
+return invertCorrection(signal: lowPassFiltered)
+}
+
+func downsample(signal: [Double], originalRate: Double, targetRate: Double) -> [Double] {
+let factor = Int(originalRate / targetRate)
+return stride(from: 0, to: signal.count, by: factor).map { signal[$0] }
+}
+
+// MARK: - Dataset Splitting
+
+func splitDataset(dataset: [Double], trainRatio: Double, validRatio: Double) -> ([Double], [Double], [Double]) {
+let trainEnd = Int(Double(dataset.count) * trainRatio)
+let validEnd = trainEnd + Int(Double(dataset.count) * validRatio)
+return (Array(dataset[..<trainEnd]), Array(dataset[trainEnd..<validEnd]), Array(dataset[validEnd...]))
+}
+
+// MARK: - Data Augmentation
+
+func randomTimeScale(signal: [Double]) -> [Double] {
+// Implement random time scaling
+return signal
+}
+
+func randomNoise(signal: [Double]) -> [Double] {
+// Add random noise
+return signal
+}
+
+func randomInvert(signal: [Double]) -> [Double] {
+return Bool.random() ? signal.map { -$0 } : signal
+}
+
+func randomMask(signal: [Double]) -> [Double] {
+// Apply random mask
+return signal
+}
+
+// MARK: - Outlier Handling
+
+func clipSignal(signal: [Double], stdMultiplier: Double = 3.0) -> [Double] {
+let mean = signal.reduce(0, +) / Double(signal.count)
+let std = sqrt(signal.map { pow($0 - mean, 2) }.reduce(0, +) / Double(signal.count))
+return signal.map { min(max($0, mean - stdMultiplier * std), mean + stdMultiplier * std) }
+}
+
+// MARK: - Normalization
+
+func minMaxNormalize(signal: [Double]) -> [Double] {
+guard let minVal = signal.min(), let maxVal = signal.max() else { return signal }
+return signal.map { ($0 - minVal) / (maxVal - minVal) }
+}
+
+func meanNormalize(signal: [Double]) -> [Double] {
+let mean = signal.reduce(0, +) / Double(signal.count)
+return signal.map { $0 - mean }
+}
+
+func zScoreNormalize(signal: [Double]) -> [Double] {
+let mean = signal.reduce(0, +) / Double(signal.count)
+let std = sqrt(signal.map { pow($0 - mean, 2) }.reduce(0, +) / Double(signal.count))
+return signal.map { ($0 - mean) / std }
+}
+
+// Downsampling
+let originalFrequency = 300
+let newFrequency = 100
+
+// Split Dataset
+let trainRatio = 0.7
+let validRatio = 0.15
+let testRatio = 0.15
+
+let totalRatio = trainRatio + validRatio + testRatio
+let trainSetSize = Int(Double(trainRatio) / totalRatio)
+let validSetSize = Int(Double(validRatio) / totalRatio)
+let testSetSize = Int(Double(testRatio) / totalRatio)
+
+// For federated learning
+let numberOfClients = 5
+let trainSetPerClient = trainSetSize / numberOfClients
+
+Tasks performed in Torch Dataset Class
+label Encoding
+
+Tasks performed in Lightning Data Module Class
+Data Augmentation
+Random Time Scale
+Random Noise
+Random Invert (Vertical Flip)
+Random Mask
+
+// Outlier Handling
+let standardDeviations = 3.0
+let signalRange = Double(standardDeviations)
+
+// Convert To Tensor
+
+// Cropping
+let targetTime = 58
+let targetLength = targetTime * newFrequency
+
+func cropSignal(_ signal: [Double], length: Int) -> [Double] {
+if signal.count > length {
+return Array(signal.prefix(length))
+} else if signal.count < length {
+return signal + Array(repeating: 0.0, count: length - signal.count)
+} else {
+return signal
+}
+}
+
+func cropTrainSignal(_ signal: [Double]) -> [Double] {
+return cropSignal(signal, length: targetLength)
+}
+
+func cropValidSignal(_ signal: [Double]) -> [Double] {
+return Array(signal.prefix(targetLength))
+}
+
+func cropTestSignal(_ signal: [Double]) -> [Double] {
+return Array(signal.prefix(targetLength))
+}
+
+Voltage Normalization
+Min-Max Normalization
+Mean Normalization
+Z-Score Normalization
+
+Unsqueeze
+
+Imbalance Dataset Handling
+Using WeightedRandomSampler.
+
+Federated Dataset Partitioning
+Non_IID: using DirichletPartitioner.
+IID: using IidPartitioner.
+
+// Additional functions for cropping, zero padding, federated partitioning, etc., would follow similar structure.
