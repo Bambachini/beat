@@ -15,7 +15,61 @@ void preprocessData(std::vector<double>& signal, int sampleRate) {
     // Eliminar el ruido de alta frecuencia (>=40hz)
     // Eliminar el vagabundeo de la línea base (<=0.5hz)
     // Corregir la inversión
+    // Filtro de ruido de alta frecuencia (>=40Hz) y compensación de deriva de línea base (<=0.5Hz)
 
+#include <iostream>
+#include <vector>
+#include <cmath>
+
+// Filtro pasa bajos para la deriva de línea base
+std::vector<double> baselineWanderFilter(const std::vector<double>& signal, double cutoffFreq, double samplingFreq) {
+std::vector<double> filteredSignal(signal.size());
+double RC = 1.0 / (2 * M_PI * cutoffFreq);
+double dt = 1.0 / samplingFreq;
+double alpha = dt / (RC + dt);
+
+filteredSignal[0] = signal[0];
+for (size_t i = 1; i < signal.size(); ++i) {
+    filteredSignal[i] = filteredSignal[i - 1] + alpha * (signal[i] - filteredSignal[i - 1]);
+}
+return filteredSignal;
+
+}
+
+// Filtro pasa altos para el ruido de alta frecuencia
+std::vector<double> highFrequencyNoiseFilter(const std::vector<double>& signal, double cutoffFreq, double samplingFreq) {
+std::vector<double> filteredSignal(signal.size());
+double RC = 1.0 / (2 * M_PI * cutoffFreq);
+double dt = 1.0 / samplingFreq;
+double alpha = RC / (RC + dt);
+
+filteredSignal[0] = signal[0];
+for (size_t i = 1; i < signal.size(); ++i) {
+    filteredSignal[i] = alpha * (filteredSignal[i - 1] + signal[i] - signal[i - 1]);
+}
+return filteredSignal;
+
+}
+
+int main() {
+std::vector<double> signal = { /* señal de entrada */ };
+double samplingFreq = 1000.0; // Frecuencia de muestreo en Hz
+
+// Filtrar la deriva de la línea base (<= 0.5Hz)
+auto filteredBaseline = baselineWanderFilter(signal, 0.5, samplingFreq);
+
+// Filtrar el ruido de alta frecuencia (>= 40Hz)
+auto filteredSignal = highFrequencyNoiseFilter(filteredBaseline, 40, samplingFreq);
+
+// Mostrar la señal filtrada
+for (const auto& val : filteredSignal) {
+    std::cout << val << std::endl;
+}
+
+return 0;
+
+}
+    
     // Reducir la tasa de muestreo de 300hz a 100hz
     int downsampledRate = sampleRate / 3;
     std::vector<double> downsampledSignal;
