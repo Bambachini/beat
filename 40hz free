@@ -70,4 +70,81 @@ func zScoreNormalize(signal: [Double]) -> [Double] {
     return signal.map { ($0 - mean) / std }
 }
 
+```swift
+import Foundation
+
+// Downsampling
+let originalFrequency = 300
+let newFrequency = 100
+
+// Split Dataset
+let trainRatio = 0.7
+let validRatio = 0.15
+let testRatio = 0.15
+
+let totalRatio = trainRatio + validRatio + testRatio
+let trainSetSize = Int(Double(trainRatio) / totalRatio)
+let validSetSize = Int(Double(validRatio) / totalRatio)
+let testSetSize = Int(Double(testRatio) / totalRatio)
+
+// For federated learning
+let numberOfClients = 5
+let trainSetPerClient = trainSetSize / numberOfClients
+
+// Tasks performed in Torch Dataset Class
+// Label Encoding
+
+// Tasks performed in Lightning Data Module Class
+// Data Augmentation
+// Random Time Scale
+// Random Noise
+// Random Invert (Vertical Flip)
+// Random Mask
+
+// Outlier Handling
+let standardDeviations = 3.0
+let signalRange = Double(standardDeviations)
+
+// Convert To Tensor
+
+// Cropping
+let targetTime = 58
+let targetLength = targetTime * newFrequency
+
+func cropSignal(_ signal: [Double], length: Int) -> [Double] {
+    if signal.count > length {
+        return Array(signal.prefix(length))
+    } else if signal.count < length {
+        return signal + Array(repeating: 0.0, count: length - signal.count)
+    } else {
+        return signal
+    }
+}
+
+func cropTrainSignal(_ signal: [Double]) -> [Double] {
+    return cropSignal(signal, length: targetLength)
+}
+
+func cropValidSignal(_ signal: [Double]) -> [Double] {
+    return Array(signal.prefix(targetLength))
+}
+
+func cropTestSignal(_ signal: [Double]) -> [Double] {
+    return Array(signal.prefix(targetLength))
+}
+
+// Voltage Normalization
+// Min-Max Normalization
+// Mean Normalization
+// Z-Score Normalization
+
+// Unsqueeze
+
+// Imbalance Dataset Handling
+// Using WeightedRandomSampler.
+
+// Federated Dataset Partitioning
+// Non_IID: using DirichletPartitioner.
+// IID: using IidPartitioner.
+
 // Additional functions for cropping, zero padding, federated partitioning, etc., would follow similar structure.
