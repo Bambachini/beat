@@ -66,7 +66,7 @@ for (const auto& val : filteredSignal) {
     std::cout << val << std::endl;
 }
 
-return 0;
+
 
 }
     
